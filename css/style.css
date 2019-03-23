@@ -20,7 +20,7 @@
     max-width: 80%;
     min-height: 100vh;
     background-color: #fff;
-    align-items: stretch;
+    box-shadow: 1px 10px 20px rgba(0,0,0,0.19), 1px 6px 6px rgba(0,0,0,0.23);
   }
 
 /* Header Section */
@@ -33,17 +33,24 @@
   }
 
   heading h1 {
-    width: 50%;
+    width: 40%;
     margin: 1em auto;
     color: #333;
     font-size: 2.5em;
     font-weight: 600;
+    padding-bottom: 5px;
     border-bottom: 1px solid #333;
   }
 
   #img-div img {
+    display: block;
     max-width: 100%;
+    margin: auto;
     margin-bottom: 0;
+  }
+
+  #img-div figcaption {
+    padding-top: 10px;
   }
 
 /* Article Section */
@@ -73,5 +80,11 @@
   @media(max-width: 768px) {
     heading h1 {
       width: 90%;
+      font-size: 2em;
+      font-weight: 500;
+    }
+
+    #tribute-info div { 
+      width: 80%;
     }
   }
